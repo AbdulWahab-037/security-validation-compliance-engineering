@@ -18,21 +18,26 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v4
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
+    - name: Validate Documentation Files
+      run: |
+        echo "Checking required documentation files..."
 
-    - name: Install Dependencies
-      run: npm install
+        test -f README.md
+        test -f docs/section-a-q1-validation-criteria.md
+        test -f docs/section-b-q2-ci-validation.md
+        test -f docs/section-c-q3-security-validation.md
+        test -f docs/section-d-q4-risk-compliance.md
+        test -f docs/validation-checklist.md
+        test -f docs/risk-register.md
+        test -f docs/compliance-report.md
+        test -f docs/zap-security-report.md
 
-    - name: Execute Tests
-      run: echo "Executing validation tests..."
+        echo "All required documentation files exist."
 
     - name: Generate Validation Logs
       run: |
-        mkdir validation-logs
-        echo "Validation completed successfully" > validation-logs/report.txt
+        mkdir -p validation-logs
+        echo "Validation completed successfully." > validation-logs/report.txt
         date >> validation-logs/report.txt
 
     - name: Upload Validation Artifacts
