@@ -1,0 +1,10 @@
+OWASP ZAP Scan Summary
+
+High Risk:
+- SQL Injection
+
+Medium Risk:
+- Cross-Site Scripting (XSS)
+
+Low Risk:
+- Missing Security Headers
