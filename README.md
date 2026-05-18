@@ -14,10 +14,39 @@ This repository demonstrates:
 # Repository Structure
 
 ```text
-docs/
-evidence/
-zap-reports/
-.github/workflows/
+security-validation-compliance-engineering/
+│
+├── docs/
+│   ├── section-a-q1-validation-criteria.md
+│   ├── section-b-q2-ci-validation.md
+│   ├── section-c-q3-security-validation.md
+│   ├── section-d-q4-risk-compliance.md
+│   ├── validation-checklist.md
+│   ├── risk-register.md
+│   ├── compliance-report.md
+│   └── zap-security-report.md
+│
+├── evidence/
+│   ├── screenshots/
+│   │   └── .gitkeep
+│   │
+│   ├── logs/
+│   │   ├── .gitkeep
+│   │   └── validation-log.txt
+│   │
+│   └── reports/
+│       ├── .gitkeep
+│       └── zap-summary.txt
+│
+├── zap-reports/
+│   ├── .gitkeep
+│   └── zap-report.html
+│
+├── .github/
+│   └── workflows/
+│       └── validation.yml
+│
+└── README.md
 ```
 
 ---
