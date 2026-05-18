@@ -1,9 +1,3 @@
-
----
-
-# `docs/section-d-q4-risk-compliance.md`
-
-```md
 # Section D — Validation Risk and Compliance Documentation
 
 # Q4. Validation Risk Management and Compliance Evidence
@@ -29,7 +23,7 @@ A fintech application must maintain validation and compliance records for extern
 ## Unauthorized Access
 Attackers may gain access to sensitive financial information if authentication controls are weak.
 
-Mitigation:
+### Mitigation
 - MFA implementation
 - Role-based access control
 - Strong password policies
@@ -39,7 +33,7 @@ Mitigation:
 ## Data Leakage
 Sensitive financial records may be exposed during storage or transmission.
 
-Mitigation:
+### Mitigation
 - Data encryption
 - Secure communication protocols
 - Access monitoring
@@ -49,7 +43,7 @@ Mitigation:
 ## Missing Audit Logs
 Lack of proper logs may affect audit readiness and compliance verification.
 
-Mitigation:
+### Mitigation
 - Centralized logging
 - Log retention policies
 - Automated monitoring
@@ -83,3 +77,32 @@ project-root/
 │   └── zap-report.json
 │
 └── README.md
+```
+
+---
+
+# Repository Purpose
+
+| Folder | Purpose |
+|---|---|
+| docs | Stores validation and compliance documents |
+| evidence | Stores screenshots, logs, and reports |
+| workflows | Stores CI/CD automation workflows |
+| zap-reports | Stores OWASP ZAP reports |
+
+---
+
+# Audit Readiness Benefits
+
+This repository structure supports:
+- traceability,
+- organized validation evidence,
+- compliance documentation,
+- audit preparation,
+- secure evidence management.
+
+---
+
+# Conclusion
+
+A structured validation and compliance repository improves audit readiness and helps maintain traceable security validation evidence for external review.
